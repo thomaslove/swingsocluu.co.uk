@@ -1,0 +1,682 @@
+/*RESET*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img{
+	border:0;
+}
+address,caption,cite,dfn,th,var{
+	font-style:normal;
+	font-weight:normal;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+
+
+/*MAIN*/
+
+#Archived {
+	background-color: #E0352B;
+	position: relative;
+	padding: 20px;
+	color: white;
+	z-index: 30;
+	display: flex;
+	justify-content: space-between;
+	border: none;
+	text-decoration: none;
+}
+
+#Archived h1 {
+	font-weight: 200;
+	font-family: Raleway,Helvetica,Arial,sans-serif;
+	text-rendering: optimizeLegibility;
+	display: block;
+	line-height: 60px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 20px;
+
+}
+
+#Archived img {
+	display: block;
+	padding-right: 10px;
+}
+
+html{
+	font-family:Cambria, Georgia, "Times New Roman", Times, serif;
+	background:#e0ddc4;
+	color:#666;
+	height:101%;
+
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+.Wrapper{
+	width:880px;
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom:60px;
+	margin:0 auto;
+	background:#fff;
+	position: relative;
+	z-index: 0;
+	margin-bottom: 100px;
+}
+
+#headlines, #upcoming{
+margin-top:40px;
+}
+
+#intro{
+margin-top:20px;
+}
+
+#footerbar{
+height: 20px;
+width: 960px;
+background: url('/assets/img/wood.jpg');
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+/*UNICRON*/
+
+.ribbon{
+float:left;
+margin-left:-50px;
+content:" ";
+display: block;
+height: 0px;
+position:relative;
+margin-bottom: 30px;
+}
+
+.r-date{
+margin-bottom: 0px!important;
+}
+
+.ribbon:before{
+content:" ";
+display: block;
+width: 0px;
+height: 0px;
+border-left: solid 10px transparent;
+position:absolute;
+}
+
+.partialwidth{
+border-width: 40px;
+border-style: solid;
+border-color:#424755 transparent #424755 #424755;
+width: 300px;
+}
+
+.partialwidth:before{
+border-top: solid 10px #000000;
+bottom: -50px;
+left: -40px;
+}
+
+.partialwidth > p {
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 500px;
+height: 80px;
+line-height: 80px;
+font-size: 26px;
+height: 40px;
+font-family: 'market_decoregular';
+color: white;
+}
+
+.fullwidth{
+width: 980px;
+height: 80px;
+border-width: solid 0px;
+background: #424755;
+}
+
+.fullwidth > p {
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 980px;
+height: 80px;
+line-height: 80px;
+font-size: 35px;
+font-family: 'market_decoregular';
+color: white;
+text-align: center;
+}
+
+
+.fullwidth:before{
+border-top: solid 10px #2f333e;
+bottom: -10px;
+left: 0;
+}
+
+.fullwidth:after{
+content:" ";
+display: block;
+width: 0px;
+height: 0px;
+border-right: solid 10px transparent;
+position:absolute;
+border-top: solid 10px #2f333e;
+bottom: -10px;
+left: 970px;
+}
+
+/*VARIATIONS*/
+
+.r-news{
+height: 200px;
+background: rgb(239, 237, 216);
+}
+
+.r-twitter, .r-upcoming, .r-subtitle{
+border-width: 30px;
+}
+
+.r-twitter:before, .r-upcoming:before, .r-subtitle:before{
+border-top: solid 10px #2f333e;
+bottom: -40px;
+left: -30px;
+}
+
+.r-twitter > p{
+/*margin-left: 55px;*/
+width: 200px;
+}
+
+.r-date {
+width: 150px;
+border-color:#632f49 transparent #632f49 #632f49;
+position: relative;
+}
+
+.r-date:before {
+border-top: solid 10px #482034;
+}
+
+.fullwidth.r-news:before, .fullwidth.r-news:after {
+border-top: solid 10px #75735e;
+}
+
+.r-subtitle{
+margin-top: 40px;
+margin-bottom: 20px;
+}
+
+/*UPCOMING*/
+
+.r-day{
+float:left;
+font-size: 70px;
+line-height: 80px;
+font-family: 'bebas_neueregular';
+color: white;
+}
+
+.r-monthyear{
+float:left;
+font-size: 30px;
+line-height: 30px;
+font-family: 'bebas_neueregular';
+position: relative;
+color: white;
+}
+
+.r-day{
+position: absolute;
+bottom: -40px;
+left: -10px;
+}
+
+.r-month{
+position: absolute;
+bottom: 0px;
+left: 50px;
+}
+
+.r-year{
+position: absolute;
+bottom: -30px;
+left: 50px;
+}
+
+.event{
+margin-bottom: 20px;
+height: 80px;
+}
+
+.event-desc{
+margin-left: 40px;
+float: left;
+width: 450px;
+}
+
+.event-url{
+float: right;
+margin-top: 20px;
+}
+
+/*TYPE*/
+
+li.current{
+font-weight: 50;
+
+}
+
+#logo > a{
+display: block;
+width: 100px;
+height: 100px;
+position: absolute;
+left: 0;
+}
+
+/*HEADER*/
+
+#header{
+padding-bottom: 10px;
+}
+
+.header_f{
+float: left;
+margin-left: -50px;
+height: 300px;
+}
+
+.header_b{
+float:right;
+margin-right: -50px;
+z-index: -100;
+position: relative;
+height: 300px;
+}
+
+#cb{
+margin-left:-40px;
+width: 960px;
+height: 120px;
+margin-bottom: -110px;
+background: #632f49;
+z-index: -500;
+position: relative;
+}
+
+#social{
+margin-top: -330px;
+margin-right: -20px;
+float: right;
+z-index: 100;
+}
+
+#twittersocial{
+float: left;
+margin-right: 10px;
+}
+
+#fbsocial{
+float: left;
+}
+
+#twittersocial, #fbsocial{
+	transition-property: all;
+	transition-duration: 200ms;
+	transition-timing-function: ease;
+
+}
+
+#twittersocial:hover, #fbsocial:hover{
+	margin-top: 10px;
+}
+
+
+#topmenubox{
+position: absolute;
+margin-top: -100px;
+right: 10px;
+}
+
+ul.topmenu{
+float: right;
+list-style: none;
+margin-right: 20px;
+}
+
+ul.topmenu > li > a{
+text-decoration: none;
+color: black;
+}
+
+a.menu{
+font-size: 20px;
+}
+
+#intro_text{
+width: 410px;
+float: right;
+padding-left: 20px;
+}
+
+/*NEWS*/
+
+#headlines{
+padding: 20px 0px;
+margin-left: -50px;
+width: 980px;
+}
+
+.news{
+width: 25%;
+height: 200px;
+float: left;
+text-align: center;
+}
+
+.clear{clear:both}
+
+/* EVENTS */
+
+#upcoming{
+width: 880px;
+height: 100%;
+}
+
+.box{
+float: left;
+background:transparent;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.box.desc{
+float: left;
+margin-top: -5px;
+}
+
+.box.tickets{
+margin-top: 10px;
+float: right;
+}
+
+.date{
+width: 250px;
+margin-right: 20px;
+height: 80px;
+padding-left: 20px;
+}
+
+.desc{
+width: 50%;
+margin-right: 10px;
+height: 100%;
+}
+
+.tickets{
+width: 20%;
+float: right;
+height: 100%;
+text-align: center;
+}
+
+#day{
+width: 40px;
+height: 80px;
+float:left;
+padding-right: 25px;
+}
+
+#date_container{
+height: 100%;
+float:left;
+margin: auto;
+}
+
+#day{
+font-size: 70px;
+line-height: 80px;
+font-family: 'bebas_neueregular';
+z-index: 1;
+}
+
+#month{
+font-size: 30px;
+line-height: 30px;
+font-family: 'bebas_neueregular';
+
+padding-top: 10px;
+}
+#year{
+font-size: 30px;
+line-height: 30px;
+font-family: 'bebas_neueregular';
+}
+
+.date.ribbon:after {
+content:" ";
+display:block;
+position:absolute;
+height: 0px;
+width: 170px;
+border-width:40px;
+border-style:solid;
+border-color:#632f49 transparent #632f49 #632f49;
+bottom: 0;
+left: 0;
+z-index: -1;
+}
+
+#button{
+
+background-size:cover;
+height: 60px;
+width: 180px;
+text-align: center;
+float: right;
+
+background-image: url('/assets/img/button.png');
+
+}
+
+#button:hover{
+background-position:0px -60px;
+height: 60px;
+width: 180px;
+}
+
+#button > a {
+font-size: 25px;
+line-height: 60px;
+font-family: 'market_decoregular';
+color: white;
+text-decoration: none;
+}
+
+.type1{
+margin-top: 30px
+}
+
+/*TWITTER*/
+
+#twitter{
+margin-top: 40px;
+}
+
+#twitter_banner{
+padding: 10px;
+width: 275px;
+height: 40px;
+margin-left: -50px;
+background: #424755!important;
+}
+
+#twitter_banner > a{
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+width: 295px;
+height: 60px;
+}
+
+#twitter_bird{
+float: left;
+padding-right: 10px;
+margin-top: -20px;
+}
+
+ul#tweets > li{
+list-style-type: none;
+}
+
+ul.tweet{
+float: left;
+list-style: none;
+width: 240px;
+padding-left: 20px;
+}
+
+#avatar {
+float: left;
+width: 100px;
+}
+
+li.tweet-title > a{
+text-decoration: none;
+color: rgb(0,132,180);
+}
+
+li.tweet-date > a{
+text-decoration: none;
+color: rgb(102,102,102);
+}
+
+li.tweet-date > a:hover, li.tweet-title > a:hover{
+text-decoration: underline;
+color: rgb(0,132,180);
+}
+
+/*FOOTER*/
+
+#footer{
+position: absolute;
+bottom: -60px;
+width: 960px;
+left: 0px;
+}
+
+ul#menu_bottom{
+float: left;
+width: 50%;
+}
+
+ul#menu_bottom > li{
+display:inline;
+}
+
+ul#menu_bottom > li > a{
+text-decoration: none;
+color: black;
+}
+
+ul#menu_bottom > li:after{
+content: " /";
+}
+
+ul#menu_bottom > li.end:after{
+content: "";
+}
+
+#copyright{
+float: right;
+width: 50%;
+text-align: right;
+color: black;
+}
+
+#copyright > span{
+font-size: 20px;
+}
+
+/* PORTRAIT GALLERY */
+
+.whois{
+width: 25%;
+height: 240px;
+float: left;
+box-sizing: border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+padding: 10px;
+text-align: center;
+}
+
+.portrait{
+height: 160px;
+width: 140px;
+background: grey;
+margin: 0px auto;
+margin-bottom: 5px;
+}
+
+#classcontainer{
+width: 100%;
+}
+
+ #regeventcont{
+ width: 100%;
+ height: 60px;
+ }
+
+.class{
+float: left;
+display:inline-block;
+width:33%;
+}
+
+.regevent{
+float: left;
+display:inline-block;
+width:20%;
+}
+
+.am-wrapper{
+    float:left;
+    position:relative;
+    overflow:hidden;
+}
+.am-wrapper img{
+    position:absolute;
+    outline:none;
+}
