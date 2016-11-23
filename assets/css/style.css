@@ -32,35 +32,6 @@ abbr,acronym{
 
 /*MAIN*/
 
-#Archived {
-	background-color: #E0352B;
-	position: relative;
-	padding: 20px;
-	color: white;
-	z-index: 30;
-	display: flex;
-	justify-content: space-between;
-	border: none;
-	text-decoration: none;
-}
-
-#Archived h1 {
-	font-weight: 200;
-	font-family: Raleway,Helvetica,Arial,sans-serif;
-	text-rendering: optimizeLegibility;
-	display: block;
-	line-height: 60px;
-	margin: 0px;
-	padding: 0px;
-	font-size: 20px;
-
-}
-
-#Archived img {
-	display: block;
-	padding-right: 10px;
-}
-
 html{
 	font-family:Cambria, Georgia, "Times New Roman", Times, serif;
 	background:#e0ddc4;
